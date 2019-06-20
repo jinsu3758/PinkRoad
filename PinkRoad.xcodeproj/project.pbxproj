@@ -22,6 +22,10 @@
 		742BFF3322BA031D003E0B81 /* YDIYGO310.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 742BFF2D22BA031D003E0B81 /* YDIYGO310.TTF */; };
 		742BFF3422BA031D003E0B81 /* YDIYGO340.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 742BFF2E22BA031D003E0B81 /* YDIYGO340.TTF */; };
 		742BFF3A22BA1563003E0B81 /* SubwayMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742BFF3922BA1563003E0B81 /* SubwayMapViewController.swift */; };
+		742BFF3D22BB0E3E003E0B81 /* SelectView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 742BFF3C22BB0E3E003E0B81 /* SelectView.xib */; };
+		742BFF4122BB2954003E0B81 /* SelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742BFF4022BB2954003E0B81 /* SelectView.swift */; };
+		742BFF4322BB2984003E0B81 /* SelectedStationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742BFF4222BB2984003E0B81 /* SelectedStationCell.swift */; };
+		742BFF4522BB4469003E0B81 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742BFF4422BB4469003E0B81 /* UIColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +67,10 @@
 		742BFF2D22BA031D003E0B81 /* YDIYGO310.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = YDIYGO310.TTF; sourceTree = "<group>"; };
 		742BFF2E22BA031D003E0B81 /* YDIYGO340.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = YDIYGO340.TTF; sourceTree = "<group>"; };
 		742BFF3922BA1563003E0B81 /* SubwayMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubwayMapViewController.swift; sourceTree = "<group>"; };
+		742BFF3C22BB0E3E003E0B81 /* SelectView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectView.xib; sourceTree = "<group>"; };
+		742BFF4022BB2954003E0B81 /* SelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectView.swift; sourceTree = "<group>"; };
+		742BFF4222BB2984003E0B81 /* SelectedStationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedStationCell.swift; sourceTree = "<group>"; };
+		742BFF4422BB4469003E0B81 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				742BFF1322B9EB19003E0B81 /* UIView.swift */,
+				742BFF4422BB4469003E0B81 /* UIColor.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -184,9 +193,20 @@
 		742BFF3822BA151F003E0B81 /* SubwayMap */ = {
 			isa = PBXGroup;
 			children = (
+				742BFF3B22BB0E06003E0B81 /* SelectedStation */,
 				742BFF3922BA1563003E0B81 /* SubwayMapViewController.swift */,
 			);
 			path = SubwayMap;
+			sourceTree = "<group>";
+		};
+		742BFF3B22BB0E06003E0B81 /* SelectedStation */ = {
+			isa = PBXGroup;
+			children = (
+				742BFF3C22BB0E3E003E0B81 /* SelectView.xib */,
+				742BFF4022BB2954003E0B81 /* SelectView.swift */,
+				742BFF4222BB2984003E0B81 /* SelectedStationCell.swift */,
+			);
+			path = SelectedStation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -293,6 +313,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				742BFF3D22BB0E3E003E0B81 /* SelectView.xib in Resources */,
 				742BFF3022BA031D003E0B81 /* YDIYGO330.TTF in Resources */,
 				742BFF3122BA031D003E0B81 /* YDIYGO320.TTF in Resources */,
 				742BFF3322BA031D003E0B81 /* YDIYGO310.TTF in Resources */,
@@ -326,7 +347,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				742BFF4122BB2954003E0B81 /* SelectView.swift in Sources */,
+				742BFF4522BB4469003E0B81 /* UIColor.swift in Sources */,
 				742BFF3A22BA1563003E0B81 /* SubwayMapViewController.swift in Sources */,
+				742BFF4322BB2984003E0B81 /* SelectedStationCell.swift in Sources */,
 				742BFEE722B9EAAE003E0B81 /* MainViewController.swift in Sources */,
 				742BFF1422B9EB19003E0B81 /* UIView.swift in Sources */,
 				742BFEE522B9EAAE003E0B81 /* AppDelegate.swift in Sources */,
