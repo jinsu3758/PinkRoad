@@ -119,6 +119,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="26" y="17"/>
         </scene>
         <!--Subway Map View Controller-->
         <scene sceneID="hGL-HX-h15">
@@ -144,7 +145,7 @@
                                     <constraint firstItem="caJ-Bg-HVO" firstAttribute="top" secondItem="SF0-mu-8wI" secondAttribute="top" id="kx1-iU-fgj"/>
                                 </constraints>
                             </scrollView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wYg-VW-Xxc">
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wYg-VW-Xxc">
                                 <rect key="frame" x="0.0" y="682" width="414" height="180"/>
                                 <subviews>
                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="J2F-Y8-2xl">
@@ -224,17 +225,17 @@
                                         </constraints>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="09:30 당고개" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qxR-gr-PtU">
-                                        <rect key="frame" x="18" y="120" width="74.5" height="13.5"/>
+                                        <rect key="frame" x="18" y="120" width="69" height="15"/>
                                         <fontDescription key="fontDescription" name="YDIYGO330" family="YDIYGO330" pointSize="12.800000190734863"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="09:35 당고개" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ISW-nm-1Ev">
-                                        <rect key="frame" x="18" y="147" width="74.5" height="13.5"/>
+                                        <rect key="frame" x="18" y="148.5" width="69" height="15"/>
                                         <fontDescription key="fontDescription" name="YDIYGO330" family="YDIYGO330" pointSize="12.800000190734863"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4분" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dzm-A8-F39">
-                                        <rect key="frame" x="169.5" y="120" width="19" height="13.5"/>
+                                        <rect key="frame" x="169.5" y="120" width="19" height="15"/>
                                         <fontDescription key="fontDescription" name="YDIYGO330" family="YDIYGO330" pointSize="12.800000190734863"/>
                                         <color key="textColor" red="0.46666666666666667" green="0.46666666666666667" blue="0.46666666666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -247,23 +248,23 @@
                                         </constraints>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9분" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O6X-vh-WAW">
-                                        <rect key="frame" x="169.5" y="147" width="19" height="13.5"/>
+                                        <rect key="frame" x="169.5" y="148.5" width="19" height="15"/>
                                         <fontDescription key="fontDescription" name="YDIYGO330" family="YDIYGO330" pointSize="12.800000190734863"/>
                                         <color key="textColor" red="0.46666666670000001" green="0.46666666670000001" blue="0.46666666670000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="09:33 오이도" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="veP-JH-ifv">
-                                        <rect key="frame" x="225" y="120" width="74.5" height="13.5"/>
+                                        <rect key="frame" x="225" y="120" width="69" height="15"/>
                                         <fontDescription key="fontDescription" name="YDIYGO330" family="YDIYGO330" pointSize="12.800000190734863"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="09:43 사당" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dLq-XA-WOo">
-                                        <rect key="frame" x="225" y="147" width="63" height="13.5"/>
+                                        <rect key="frame" x="225" y="148.5" width="58" height="15"/>
                                         <fontDescription key="fontDescription" name="YDIYGO330" family="YDIYGO330" pointSize="12.800000190734863"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="7분" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OaQ-rg-MOE">
-                                        <rect key="frame" x="375.5" y="120" width="19" height="13.5"/>
+                                        <rect key="frame" x="375.5" y="120" width="19" height="15"/>
                                         <fontDescription key="fontDescription" name="YDIYGO330" family="YDIYGO330" pointSize="12.800000190734863"/>
                                         <color key="textColor" red="0.46666666670000001" green="0.46666666670000001" blue="0.46666666670000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -321,18 +322,47 @@
                     <connections>
                         <outlet property="mapView" destination="caJ-Bg-HVO" id="sdq-4V-zqk"/>
                         <outlet property="scrollView" destination="SF0-mu-8wI" id="xig-B4-Peh"/>
+                        <outlet property="selectedStationBarView" destination="47F-b5-loZ" id="9ca-7C-6Ev"/>
+                        <outlet property="selectedStationLabel" destination="7Tw-7e-TIZ" id="yRe-G2-cDx"/>
                         <outlet property="selectedStationView" destination="wYg-VW-Xxc" id="5Yt-IG-60J"/>
                         <outlet property="stationCollectionView" destination="J2F-Y8-2xl" id="4Oh-fZ-mj5"/>
-                        <outlet property="stationLabel" destination="7Tw-7e-TIZ" id="NTo-ol-IaO"/>
+                        <segue destination="Oah-L7-DLN" kind="show" identifier="reserve" id="IfB-mE-9pr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2mh-hg-Shh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1731.8840579710147" y="35.491071428571423"/>
+            <point key="canvasLocation" x="755" y="21"/>
+        </scene>
+        <!--Reserve View Controller-->
+        <scene sceneID="KtU-Wh-sAx">
+            <objects>
+                <viewController id="Oah-L7-DLN" customClass="ReserveViewController" customModule="PinkRoad" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JRH-Q3-D18">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="reserve" translatesAutoresizingMaskIntoConstraints="NO" id="9Es-gT-3Gg">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="9Es-gT-3Gg" firstAttribute="top" secondItem="9X6-Wl-YKY" secondAttribute="top" id="Fuz-a8-Pkw"/>
+                            <constraint firstItem="9X6-Wl-YKY" firstAttribute="bottom" secondItem="9Es-gT-3Gg" secondAttribute="bottom" id="Yj7-Ff-E1l"/>
+                            <constraint firstItem="9X6-Wl-YKY" firstAttribute="trailing" secondItem="9Es-gT-3Gg" secondAttribute="trailing" id="tgO-EK-wcR"/>
+                            <constraint firstItem="9Es-gT-3Gg" firstAttribute="leading" secondItem="9X6-Wl-YKY" secondAttribute="leading" id="vcb-M2-2U9"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="9X6-Wl-YKY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5Ow-5U-ZbB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1583" y="21"/>
         </scene>
     </scenes>
     <resources>
         <image name="metro" width="902" height="573"/>
+        <image name="reserve" width="151" height="267"/>
         <image name="woman" width="107.5" height="242.5"/>
     </resources>
 </document>

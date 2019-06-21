@@ -25,69 +25,69 @@
                     <rect key="frame" x="0.0" y="9" width="197" height="77"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="출발" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BqY-W3-dxJ">
-                            <rect key="frame" x="17" y="57.333333333333329" width="20.333333333333329" height="11.666666666666671"/>
+                            <rect key="frame" x="17" y="58.333333333333321" width="20.333333333333329" height="11.666666666666664"/>
                             <fontDescription key="fontDescription" name="YDIYGO330" family="YDIYGO330" pointSize="11"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="경유" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vXJ-8J-yH1">
-                            <rect key="frame" x="65" y="57.333333333333329" width="20.333333333333329" height="11.666666666666671"/>
+                            <rect key="frame" x="65" y="58.333333333333321" width="20.333333333333329" height="11.666666666666664"/>
                             <fontDescription key="fontDescription" name="YDIYGO330" family="YDIYGO330" pointSize="11"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="도착" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gLy-DX-PlZ">
-                            <rect key="frame" x="112" y="57.333333333333329" width="20.333333333333343" height="11.666666666666671"/>
+                            <rect key="frame" x="112" y="58.333333333333321" width="20.333333333333343" height="11.666666666666664"/>
                             <fontDescription key="fontDescription" name="YDIYGO330" family="YDIYGO330" pointSize="11"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="시간표" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X0Z-22-z8F">
-                            <rect key="frame" x="154.66666666666666" y="57.333333333333329" width="30.666666666666657" height="11.666666666666671"/>
+                            <rect key="frame" x="154.66666666666666" y="58.333333333333321" width="30.666666666666657" height="11.666666666666664"/>
                             <fontDescription key="fontDescription" name="YDIYGO330" family="YDIYGO330" pointSize="11"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Ir-fg-fJP">
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Ir-fg-fJP">
                             <rect key="frame" x="6" y="9.6666666666666679" width="42" height="42"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="42" id="ghk-6O-zHB"/>
                                 <constraint firstAttribute="height" constant="42" id="ik0-U9-mLL"/>
                             </constraints>
-                            <state key="normal" title="Button"/>
+                            <state key="normal" image="subwayStart"/>
                             <connections>
                                 <action selector="selectStart:" destination="-1" eventType="touchUpInside" id="4r8-z1-cmN"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wvr-Rr-mEk">
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wvr-Rr-mEk">
                             <rect key="frame" x="54" y="9.6666666666666679" width="42" height="42"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="42" id="BZR-TN-Cbr"/>
                                 <constraint firstAttribute="height" constant="42" id="Gpf-3n-9Jd"/>
                             </constraints>
-                            <state key="normal" title="Button"/>
+                            <state key="normal" image="subwayVia"/>
                             <connections>
                                 <action selector="selectVia:" destination="-1" eventType="touchUpInside" id="hnV-oB-31f"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uSJ-Qk-uZd">
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uSJ-Qk-uZd">
                             <rect key="frame" x="149" y="9.6666666666666679" width="42" height="42"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="42" id="QIs-uf-JdU"/>
                                 <constraint firstAttribute="height" constant="42" id="tll-MC-d0f"/>
                             </constraints>
-                            <state key="normal" title="Button"/>
+                            <state key="normal" image="subwayTimeTable"/>
                             <connections>
                                 <action selector="selectTimeTable:" destination="-1" eventType="touchUpInside" id="Agy-s3-wRu"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SJX-71-ZDz">
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SJX-71-ZDz">
                             <rect key="frame" x="101" y="9.6666666666666679" width="42" height="42"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="42" id="5Po-zu-D0v"/>
                                 <constraint firstAttribute="height" constant="42" id="UY0-61-D7r"/>
                             </constraints>
-                            <state key="normal" title="Button"/>
+                            <state key="normal" image="subwayArrive"/>
                             <connections>
                                 <action selector="selectArrive:" destination="-1" eventType="touchUpInside" id="Tzi-8m-7ZA"/>
                             </connections>
@@ -97,7 +97,7 @@
                     <constraints>
                         <constraint firstItem="SJX-71-ZDz" firstAttribute="centerY" secondItem="wvr-Rr-mEk" secondAttribute="centerY" id="8Fs-DQ-UUU"/>
                         <constraint firstItem="vXJ-8J-yH1" firstAttribute="centerY" secondItem="BqY-W3-dxJ" secondAttribute="centerY" id="9md-JL-0va"/>
-                        <constraint firstAttribute="bottom" secondItem="BqY-W3-dxJ" secondAttribute="bottom" constant="8" id="GL1-Md-pLO"/>
+                        <constraint firstAttribute="bottom" secondItem="BqY-W3-dxJ" secondAttribute="bottom" constant="7" id="GL1-Md-pLO"/>
                         <constraint firstItem="uSJ-Qk-uZd" firstAttribute="leading" secondItem="SJX-71-ZDz" secondAttribute="trailing" constant="6" id="N75-7L-qFX"/>
                         <constraint firstItem="4Ir-fg-fJP" firstAttribute="top" secondItem="hJW-e6-m5C" secondAttribute="top" constant="9.5" id="PU2-uD-kzD"/>
                         <constraint firstItem="4Ir-fg-fJP" firstAttribute="leading" secondItem="hJW-e6-m5C" secondAttribute="leading" constant="6" id="UXh-Sm-i7d"/>
@@ -137,5 +137,9 @@
     </objects>
     <resources>
         <image name="selectArrow" width="10.666666984558105" height="9"/>
+        <image name="subwayArrive" width="41.666667938232422" height="41.666667938232422"/>
+        <image name="subwayStart" width="41.666667938232422" height="41.666667938232422"/>
+        <image name="subwayTimeTable" width="41.666667938232422" height="41.666667938232422"/>
+        <image name="subwayVia" width="41.666667938232422" height="41.666667938232422"/>
     </resources>
 </document>

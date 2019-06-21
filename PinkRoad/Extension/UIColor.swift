@@ -34,4 +34,12 @@ extension UIColor {
     class var sixStationColor: UIColor {
         return UIColor(red: 176, green: 72, blue: 4)
     }
+    
+    class var threeStationColor: UIColor {
+        return UIColor(red: 255, green: 114, blue: 3)
+    }
+    
+    class var bgColor: UIColor {
+        return UIColor(hex: 0xe9edf0)
+    }
 }

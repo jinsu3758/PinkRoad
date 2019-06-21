@@ -13,10 +13,11 @@ class SubwayMapViewController: UIViewController {
     @IBOutlet weak var mapView: UIImageView!
     @IBOutlet weak var stationCollectionView: UICollectionView!
     @IBOutlet weak var selectedStationView: UIView!
-    @IBOutlet weak var stationLabel: UILabel!
+    @IBOutlet weak var selectedStationBarView: UIView!
+    @IBOutlet weak var selectedStationLabel: UILabel!
     
     var selectedView: SelectView = SelectView(frame: CGRect.init())
-    var routeList: [String] = ["4", "6"]
+    var routeList: [String] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,24 +26,46 @@ class SubwayMapViewController: UIViewController {
         selectedView.delegate = self
         stationCollectionView.delegate = self
         stationCollectionView.dataSource = self
-        stationLabel.bezierPathBorder(.fourStationColor, width: 5)
         
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(mapTap(_:)))
         mapView.addGestureRecognizer(tapGesture)
         mapView.isUserInteractionEnabled = true
+        
     }
     
     @objc func mapTap(_ sender: UITapGestureRecognizer) {
+        
         if sender.state == .ended {
             let point = sender.location(in: sender.view)
             print("x : \(point.x) y : \(point.y)")
             if (point.x >= 400 && point.x <= 412) && (point.y >= 350 && point.y <= 360) {
                 print("삼각지!!")
-                // x는 신길 x좌표 - 120 , y는 신길 y좌표 + 5
+                // x는 삼각지 x좌표 - 120 , y는 삼각지 y좌표 + 5
+                routeList = ["4", "6"]
+                stationCollectionView.reloadData()
+                selectedStationView.isHidden = false
+                selectedStationBarView.backgroundColor = .fourStationColor
+                selectedStationLabel.bezierPathBorder(.fourStationColor, width: 5)
                 scrollView.setContentOffset(CGPoint(x: 406, y: 350 - 60), animated: true)
-                selectedView.frame = CGRect(x: 406 - 120, y: 360, width: 196.5, height: 77)
+                selectedView.frame = CGRect(x: 406 - 120, y: 360, width: 196.5, height: 86)
                 self.mapView.addSubview(selectedView)
+                selectedView.isHidden = false
                 
+            }
+            else if (point.x >= 392 && point.x <= 408) && (point.y >= 138 && point.y <= 150) {
+                print("안국!!")
+                routeList = ["3"]
+                stationCollectionView.reloadData()
+                selectedStationView.isHidden = false
+                selectedStationBarView.backgroundColor = .threeStationColor
+                selectedStationLabel.bezierPathBorder(.threeStationColor, width: 5)
+                scrollView.setContentOffset(CGPoint(x: 390, y: 130 - 60), animated: true)
+                selectedView.frame = CGRect(x: 392 - 120, y: 150, width: 196.5, height: 86)
+                self.mapView.addSubview(selectedView)
+                selectedView.isHidden = false
+            }
+            else {
+                selectedView.isHidden = true
             }
         }
     }
@@ -57,8 +80,7 @@ extension SubwayMapViewController: UIScrollViewDelegate {
 
 extension SubwayMapViewController: SelectDelegate {
     func selectStart() {
-        
-        
+        selectedView.isHidden = true
     }
     
     func selectVia() {
@@ -66,7 +88,7 @@ extension SubwayMapViewController: SelectDelegate {
     }
     
     func selectArrive() {
-        
+        performSegue(withIdentifier: "reserve", sender: self)
     }
     
     func selectTimeTable() {
@@ -76,21 +98,12 @@ extension SubwayMapViewController: SelectDelegate {
 
 extension SubwayMapViewController: UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 2
+        return routeList.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "routeCell", for: indexPath) as! SelectedStationCell
-        let index = indexPath.item
-        cell.numLabel.text = routeList[index]
-        cell.numLabel.layer.cornerRadius = 12
-        cell.numLabel.layer.masksToBounds = true
-        if index == 0 {
-            cell.numLabel.backgroundColor = .fourStationColor
-        }
-        else {
-            cell.numLabel.backgroundColor = .sixStationColor
-        }
+        cell.fill(routeList[indexPath.item])
         return cell
     }
     

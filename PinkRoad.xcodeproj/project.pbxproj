@@ -26,6 +26,7 @@
 		742BFF4122BB2954003E0B81 /* SelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742BFF4022BB2954003E0B81 /* SelectView.swift */; };
 		742BFF4322BB2984003E0B81 /* SelectedStationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742BFF4222BB2984003E0B81 /* SelectedStationCell.swift */; };
 		742BFF4522BB4469003E0B81 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742BFF4422BB4469003E0B81 /* UIColor.swift */; };
+		742BFF4B22BCA016003E0B81 /* ReserveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742BFF4A22BCA016003E0B81 /* ReserveViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,7 @@
 		742BFF4022BB2954003E0B81 /* SelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectView.swift; sourceTree = "<group>"; };
 		742BFF4222BB2984003E0B81 /* SelectedStationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedStationCell.swift; sourceTree = "<group>"; };
 		742BFF4422BB4469003E0B81 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		742BFF4A22BCA016003E0B81 /* ReserveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReserveViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,6 +188,7 @@
 		742BFF3722BA1512003E0B81 /* Reserve */ = {
 			isa = PBXGroup;
 			children = (
+				742BFF4A22BCA016003E0B81 /* ReserveViewController.swift */,
 			);
 			path = Reserve;
 			sourceTree = "<group>";
@@ -348,6 +351,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				742BFF4122BB2954003E0B81 /* SelectView.swift in Sources */,
+				742BFF4B22BCA016003E0B81 /* ReserveViewController.swift in Sources */,
 				742BFF4522BB4469003E0B81 /* UIColor.swift in Sources */,
 				742BFF3A22BA1563003E0B81 /* SubwayMapViewController.swift in Sources */,
 				742BFF4322BB2984003E0B81 /* SelectedStationCell.swift in Sources */,
